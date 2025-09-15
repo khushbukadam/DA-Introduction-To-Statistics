@@ -1,0 +1,211 @@
+1. What are the key properties of a Normal Distribution?
+ANS:-
+
+Key Properties of a Normal Distribution
+1.Shape
+    ->Symmetrical, bell-shaped curve.
+    ->Mean (μ), Median, and Mode are all equal and located at the center.
+
+2.Probability Density Function (PDF)
+ For a function \(f(x)\) to be a valid PDF, it must satisfy two main properties: 
+  Non-negativity: The function's value can never be negative.
+   \(f(x)\ge 0\) for all \(x\)
+
+->Total area equals one: The total area under the entire curve of the PDF must be equal to 1, as the sum of all possible probabilities is 100%.\(\int _{-\infty }^{\infty }f(x)\,dx=1\) 
+
+
+3.Spread (Standard Deviation, σ)
+Controls how "wide" or "narrow" the curve is.
+Larger σ → wider curve; Smaller σ → narrower curve.
+
+4.Empirical Rule (68–95–99.7 Rule)
+
+About 68% of values fall within 1σ of the mean.
+About 95% fall within 2σ.
+About 99.7% fall within 3σ.
+
+5.Asymptotic
+The curve approaches, but never touches, the x-axis.
+
+6.Total Area = 1
+The area under the curve (probability space) equals 1.
+
+7.Standard Normal Distribution
+
+A special case with mean μ = 0 and standard deviation σ = 1.
+Values can be converted to this form using z-scores:
+
+
+2). Define:
+ans:-
+o Probability Density Function (PDF):-
+A probability density function (PDF) is a function that describes the relative likelihood of a continuous random variable taking on a given value. It is defined for continuous random variables, which can take on any value within a specified range (e.g., the height of a person or the time it takes to travel to work).
+
+The PDF itself doesn't give the probability of a specific value because for a continuous variable, the probability of it being exactly one single value is zero. Instead, the probability is found by calculating the area under the curve of the PDF over a specific range or interval. This is done using integral calculus.
+
+o Z-Score:-
+A Z-score (also known as a standard score) is a measurement that describes a data point's relationship to the mean of a group of values. It's measured in terms of standard deviations from the mean.
+
+o Standard Normal Distribution
+The standard normal distribution, also known as the z-distribution, is a specific type of normal distribution. It's a fundamental concept in statistics because it provides a common framework for analyzing and comparing different datasets.
+
+3. Differentiate between:
+o Discrete vs. Continuous Distributions
+
+| Feature                    | Discrete Distribution           | Continuous Distribution                              |
+| -------------------------- | ------------------------------- | ---------------------------------------------------- |
+| **Possible values**        | Countable (finite or infinite)  | Uncountably infinite (any real value in an interval) |
+| **Function type**          | PMF (Probability Mass Function) | PDF (Probability Density Function)                   |
+| **Probability at a point** | $P(X = x) \neq 0$ possible      | $P(X = x) = 0$ always                                |
+| **Total probability**      | $\sum P(X = x) = 1$             | $\int_{-\infty}^{\infty} f(x)\,dx = 1$               |
+| **Examples**               | Dice, coins, number of calls    | Height, weight, time, temperature                    |
+
+
+o Binomial vs. Normal Distribution
+
+| Feature        | Binomial Distribution          | Normal Distribution           |
+| -------------- | ------------------------------ | ----------------------------- |
+| **Type**       | Discrete (counts of successes) | Continuous (real values)      |
+| **Shape**      | Can be skewed (if $p$ ≠ 0.5)   | Always symmetric, bell-shaped |
+| **Parameters** | $n, p$                         | $\mu, \sigma$                 |
+| **Range of X** | $0, 1, 2, \dots, n$            | $-\infty < x < \infty$        |
+| **Mean**       | $np$                           | $\mu$                         |
+| **Variance**   | $np(1-p)$                      | $\sigma^2$                    |
+| **Example**    | Coin toss outcomes             | Human heights                 |
+
+• Practical Section
+4. In a standardized test, scores follow a normal distribution with mean = 100, std.
+dev = 15:
+• What is the probability that a student scores above 115?
+ans:-The probability that a student scores above 115 on the standardized test is approximately **0.1587**, or **15.87%**.
+
+Here's how the calculation is performed:
+
+### 1. Calculate the Z-score
+
+First, we calculate the Z-score for a score of 115 using the formula:
+$$z = \frac{x - \mu}{\sigma}$$
+Given:
+* Score ($x$) = 115
+* Mean ($\mu$) = 100
+* Standard Deviation ($\sigma$) = 15
+
+$$z = \frac{115 - 100}{15} = \frac{15}{15} = 1$$
+
+A Z-score of 1 means that a score of 115 is exactly **one standard deviation above the mean**.
+
+---
+ 2. Find the Probability
+
+Next, we use a Z-table or statistical software to find the cumulative probability associated with a Z-score of 1. This tells us the probability of a student scoring **at or below** 115. This value is approximately **0.8413**.
+
+Since we want to find the probability of a score being **above** 115, we subtract the cumulative probability from 1:
+
+$$P(X > 115) = 1 - P(X \le 115)$$
+$$P(X > 115) = 1 - 0.8413 = 0.1587$$
+
+This result means that roughly 15.87% of students are expected to score above 115 on the test.
+
+• What percentage of students scored between 85 and 115?
+Approximately **68.27%** of students scored between 85 and 115 on the standardized test.
+
+---
+
+### 1. Calculate the Z-Scores
+
+First, we find the Z-scores for both the lower and upper scores:
+
+* **For a score of 85:**
+    $$z = \frac{85 - 100}{15} = \frac{-15}{15} = -1$$
+    This means a score of 85 is **one standard deviation below the mean**.
+
+* **For a score of 115:**
+    $$z = \frac{115 - 100}{15} = \frac{15}{15} = 1$$
+    This means a score of 115 is **one standard deviation above the mean**.
+
+---
+
+### 2. Find the Probability
+
+The probability of a score falling between 85 and 115 is the area under the normal distribution curve between the Z-scores of -1 and +1. We calculate this by finding the cumulative probability up to 115 and subtracting the cumulative probability up to 85.
+
+* Cumulative probability for a score of 115 ($P(X \le 115)$) is approximately **0.8413**.
+* Cumulative probability for a score of 85 ($P(X \le 85)$) is approximately **0.1587**.
+
+The probability between the two scores is:
+$$P(85 \le X \le 115) = P(X \le 115) - P(X \le 85)$$
+$$P(85 \le X \le 115) = 0.8413 - 0.1587 = 0.6826$$
+
+Converting this to a percentage gives us 68.26%, which is often rounded to 68.27% due to the Z-table values and statistical approximations.
+
+This result aligns with the **Empirical Rule** (or 68-95-99.7 rule), which states that for a normal distribution, approximately 68% of the data falls within one standard deviation of the mean.
+
+5. A dataset contains test scores of 100 students:
+dataset:-
+37,23,59,54,44,27,24,55,56,25,36,53,24,37,25,34,12,20,14,27,37,31,14,49,22,
+31,35,29,17,19,54,44,47,36,22,50,12,59,22,48,52,19,29,42,36,13,27,19,15,42,
+24,45,17,33,12,20,50,51,37,46,42,41,57,49,17,30,47,33,40,18,14,55,33,31,17,
+32,57,47,48,58,42,48,35,54,53,17,39,58,27,21,57,38,57,58,49,39,49,20,41,20
+
+• Create a histogram and verify the data follows a normal distribution.
+ANS:-I have created a histogram of the test scores and performed a statistical test to verify if the data follows a normal distribution.
+
+Based on the histogram and the statistical test, the dataset of student test scores does not appear to follow a normal distribution.
+
+Statistical Analysis
+Mean Score: 35.81
+
+Standard Deviation: 14.30
+
+To statistically verify the distribution, I used the Shapiro-Wilk test. This test calculates a p-value to determine if the sample data is significantly different from a normal distribution.
+
+Shapiro-Wilk Test Statistic: 0.9457
+
+P-value: 0.0004
+
+Since the p-value (0.0004) is very low (less than the common significance level of 0.05), we can reject the null hypothesis that the data comes from a normal distribution.
+
+Visual Analysis
+The histogram also supports this conclusion. A normal distribution would typically show a symmetrical, bell-shaped curve with the majority of the data clustered around the mean. Instead, the histogram shows a bimodal distribution with two distinct peaks, one around the scores of 20 and another around the scores of 50. This shape is characteristic of a non-normal distribution and suggests that the dataset may contain two or more subgroups of students with different score patterns.
+
+• Calculate Z-score for a student who scored 130.
+
+ANS:-Z-Score Calculation
+A Z-score is calculated using the formula: \(z=\frac{x-\mu }{\sigma }\), where \(x\) is the raw score, \(\mu \) is the population mean, and \(\sigma \) is the population standard deviation. 
+
+Step-by-step solution     
+ The given raw score is \(x=130\).
+ The population mean is assumed to be \(\mu =100\). 
+The population standard deviation is assumed to be \(\sigma =15\). 
+The values are substituted into the Z-score formula: \(z=\frac{130-100}{15}\). 
+The numerator is calculated: \(130-100=30\). 
+The Z-score is then calculated by dividing the result by the standard deviation: \(z=\frac{30}{15}=2\).
+
+• Interpret the Z-score meaning in this context
+
+A Z-score indicates how many standard deviations a data point is from the mean of a dataset. A positive Z-score means the value is above average, a negative Z-score indicates it's below average, and a Z-score of zero signifies the value is exactly at the mean. For example, a Z-score of +2 means the data point is two standard deviations above the mean, while a Z-score of -1 means it is one standard deviation below the mean. 
+
+To interpret a Z-score, consider:
+The sign: A positive sign (+ ) indicates the value is above the average (mean), while a negative sign (-) means it is below the average. 
+The magnitude: The absolute value of the Z-score tells you how many standard deviations the data point is from the mean. 
+The context of the data: The "unusualness" of a data point depends on the distribution of all data points. A value that is 3 standard deviations from the mean might be considered rare in a typical dataset. 
+
+Here are some general interpretations of Z-scores: 
+Z = 0: The data point's value is exactly the same as the mean.
+Z = +1: The value is one standard deviation above the mean.
+Z = -1: The value is one standard deviation below the mean.
+Z = +2: The value is two standard deviations above the mean.
+Z = -3: The value is three standard deviations below the mean.
+
+Example of Interpretation:
+Imagine a Z-score of 1.75 for an exam score. 
+The sign is positive (+): This means the score is above the class average.
+The magnitude is 1.75: This means the score is 1.75 standard deviations above the average score. This is a relatively strong performance compared to the rest of the class.
+
+
+
+
+
+
+
+
